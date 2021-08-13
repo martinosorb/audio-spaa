@@ -85,3 +85,9 @@ class SHDSpikingNetwork(nn.Module):
         out_rec = torch.stack(out_rec, dim=1)
         other_recs = [mem_rec, spk_rec]
         return out_rec, other_recs
+
+    def fw_over_time(self, inputs):
+        output, _ = self(inputs)
+        # m, _ = torch.max(output, 1)  # max over time
+        m = torch.sum(output, 1)  # sum over time
+        return m

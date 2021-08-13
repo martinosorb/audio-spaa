@@ -6,6 +6,12 @@ from matplotlib.gridspec import GridSpec
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
+def get_prediction(net, data):
+    output = net.fw_over_time(data)
+    _, am = torch.max(output, 1)      # argmax over output units
+    return am
+
+
 def compute_classification_accuracy(net, x_data, y_data, max_time, nb_steps):
     """ Computes classification accuracy on supplied data in batches. """
     accs = []
