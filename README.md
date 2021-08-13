@@ -1,6 +1,7 @@
 # Audio-SPAA
 
-Code for a network trained on the Heidelberg spiking spoken digits database.
+Code for training a network on the Heidelberg spoken digits spiking database, and attacking the data
+with a sparse adversarial attack that fools the network.
 
 ## Code sources
 The majority of the training code, with modifications, is by Manu Srinath Halvagal (https://zenkelab.org/team/)
@@ -16,5 +17,8 @@ released it under the Apache 2.0 license. See [this repo](https://github.com/LTS
  - Neftci, E.O., Mostafa, H., and Zenke, F. (2019). Surrogate Gradient Learning in Spiking Neural Networks: Bringing the Power of Gradient based optimization to spiking neural networks. IEEE Signal Process Mag 36, 51–63. https://ieeexplore.ieee.org/document/8891809 and https://arxiv.org/abs/1901.09948
  - Cramer, B., Stradmann, Y., Schemmel, J., and Zenke, F. (2020). The Heidelberg Spiking Data Sets for the Systematic Evaluation of Spiking Neural Networks. IEEE Transactions on Neural Networks and Learning Systems 1–14. https://ieeexplore.ieee.org/document/9311226 and https://arxiv.org/abs/1910.07407
 
-For more details on SparseFool see
+For more details on SparseFool see:
  - Apostolos Modas, Seyed-Mohsen Moosavi-Dezfooli, Pascal Frossard (2019). SparseFool: a few pixels make a big difference. CVPR 2019. https://arxiv.org/abs/1811.02248.
+
+For more details on the Heidelberg dataset see:
+ - Cramer, B., Stradmann, Y., Schemmel, J., and Zenke, F. (2020). The Heidelberg Spiking Data Sets for the Systematic Evaluation of Spiking Neural Networks. IEEE Transactions on Neural Networks and Learning Systems 1–14. https://ieeexplore.ieee.org/document/9311226
